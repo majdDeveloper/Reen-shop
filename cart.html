@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reen | Cart</title>
+    <!-- Link Icon Title -->
+    <link rel="icon" type="video/x-icon" href="./img/logo.png">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- Link Main CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Link Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- Link Font- awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Start Cart Page -->
+  <nav class="navbar navbar-expend-lg bg-dark navbar-light d-none d-lg-block templatemo_nav_top">
+    <div class="container text-light">
+      <div class="w-100 d-flex justify-content-between">
+        <div class="info">
+          <i class="fa-solid fa-envelope text-light"></i>
+          <a href="mailto:info@Shop.com.com" class="text-light text-decoration-none me-3">info@Shop.com</a>
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+75822145422" class="text-light text-decoration-none">+75822145422</a>
+        </div>
+        <div class="account">
+          <ul class="list-unstyled m-0">
+            <li class="d-inline me-3"><a class="text-light" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+            <li class="d-inline me-3"><a class="text-light" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="d-inline me-3"><a class="text-light" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class="d-inline me-3"><a class="text-light" href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Start Header -->
+  <nav class=" navbar-expand-lg navbar-light shadow pt-2 pb-2">
+    <div class="container d-lg-flex justify-content-between align-items-center">
+      <div class=" navbar d-flex jsutify-content-between align-items-center">
+        <a class="text-decoration-none text-success logo h1 align-self-center" href="index.html">
+          <img  src="./img/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-around" id="templatemo_main_nav">
+        <div class="flex-fill">
+          <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+            <li class="nav-item">
+                <a class="text-decoration-none nav-item-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="text-decoration-none nav-item-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="text-decoration-none nav-item-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="text-decoration-none nav-item-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar align-self-center d-flex justify-content-start">
+          <div class="d-lg-none flex-sm-fill col-7 col-sm-auto pr-3 box-search">
+            <div class="input-group">
+              <div class="input-group-text d-none d-lg-flex">
+                <i class="btn-close" data-bs-dismiss="offcanvas"></i>
+              </div>
+              <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+              <div class="input-group-text">
+                <i class="fa fa-fw fa-search" style="cursor: pointer;"></i>
+              </div>
+            </div>
+          </div>
+          <button class="bg-transparent search p-0 m-0 mx-2 border-0 d-none d-lg-inline">
+            <i class="fa fa-fw fa-search text-dark mr-2 fs-5 d-none d-lg-block" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search"></i>
+          </button>
+          <a href="cart.html" class="bg-transparent p-2 m-0 mx-2 border-0 position-relative">
+            <i class="fa fa-fw fa-cart-arrow-down text-success mr-1 fs-5 notices-cart" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Card"></i>
+            <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-warning text-dark notices">+<span>0</span></span>
+          </a>
+          <button class="bg-transparent p-0 m-0 mx-2 border-0">
+            <i class="fa fa-fw fa-user text-dark fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" title="User"></i>
+            <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-warning text-dark"></span>
+          </button>
+          <button class="bg-transparent p-0 m-0 mx-2 border-0" data-bs-toggle="modal" data-bs-target="#myModal">
+            <i class="fa-solid fa-trash-can fs-5"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="clear cart"></i>
+            <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-warning text-dark"></span>
+          </button>                 
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Clear Cart</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        Are you sure to delete the cart?
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger clear-cart" data-bs-dismiss="modal">Sure</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Close Header -->
+    <section class="cart bg-light">
+        <div class="container py-5">
+            <div class="cart-title bg-secondary p-4 text-white d-flex justify-content-around">
+              <h4>image</h4>
+              <h4>title</h4>
+              <h4>Quantity</h4>
+              <h4>price</h4>
+            </div>
+            <div class="cart-body">
+            </div>
+        </div>
+    </section>
+        <!-- Start Links -->
+        <section class="links bg-dark">
+          <div class="container py-5">
+            <div class="row border-bottom border-secondary">
+              <div class="col-md-4 pb-5">
+                <h1 class="text-success border-bottom border-secondary pb-3 mb-4">Reen Shops</h1>
+                <div>
+                  <ul class="list-unstyled text-light fw-light footer-link-list">
+                    <li class="fs-5 mt-3">
+                      <a href="#" class="text-decoration-none text-light">
+                        <i class="fa-solid fa-location-dot"></i>
+                        123 Consectetur at ligula 10660
+                      </a>
+                    </li>
+                    <li class="fs-5 mt-3">
+                      <a href="tel:+75822145422" class="text-decoration-none text-light">
+                        <i class="fa-sharp fa-solid fa-phone"></i>
+                        +75822145422
+                      </a>
+                    </li>
+                    <li class="fs-5 mt-3">
+                      <a href="#" class="text-decoration-none text-light">
+                        <i class="fa-solid fa-envelope"></i>
+                        info@Shop.com
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="products col-md-4 pb-5 fw-light">
+                <h1 class="text-muted border-bottom border-secondary pb-3 mb-4">Products</h1>
+                <div>
+                  <ul class="list-unstyled footer-link-list">
+                    <li class="fs-5 mt-3">
+                      <a href="shop.html" class="link">Luxury</a>
+                    </li>
+                    <li class="fs-5 mt-3">
+                      <a href="shop.html" class="link">Sport Wear</a>
+                    </li>
+                    <li class="fs-5 mt-3">
+                      <a href="shop.html" class="link">Men's Shoes</a>
+                    </li>
+                    <li class="fs-5 mt-3">
+                      <a href="shop.html" class="link">Women's Shoes</a>
+                    </li>
+                    <li class="fs-5 mt-3">
+                      <a href="shop.html" class="link">Popular Dress</a>
+                    </li>
+                    <li class="fs-5 mt-3">
+                      <a href="shop.html" class="link">Gym Accessories</a>
+                    </li>
+                    <li class="fs-5 mt-3">
+                      <a href="shop.html" class="link">Sport Shoes</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="products col-md-4 pb-5 fw-light">
+                <h1 class="text-muted border-bottom border-secondary pb-3 mb-4">Further Info</h1>
+                <div>
+                  <ul class="list-unstyled text-light footer-link-list">
+                    <li class="fs-5 mt-3">
+                      <a href="index.html" class="link">Home</a>
+                    </li>
+                    <li class="fs-5 mt-3">
+                      <a href="about.html" class="link">About Us</a>
+                    </li>
+                    <li class="fs-5 mt-3">
+                      <a href="cart.html" class="link">My Cart</a>
+                    </li>
+                    <li class="fs-5 mt-3">
+                      <a href="shop.html" class="link">Shop</a>
+                    </li>
+                    <li class="fs-5 mt-3">
+                      <a href="contact.html" class="link">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5 md-text-center">
+              <div class="col-auto me-auto">
+                <ul class="list-inline text-left footer-icons">
+                  <li class="list-inline-item text-center mb-4">
+                    <a href="#" class="link-circle fs-5 px-3 py-2 rounded-circle">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item text-center mb-4">
+                    <a href="#" class="link-circle fs-5 px-3 py-2 rounded-circle">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item text-center mb-4">
+                    <a href="#" class="link-circle fs-5 px-3 py-2 rounded-circle">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item text-center mb-4">
+                    <a href="#" class="link-circle fs-5 px-3 py-2 rounded-circle">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-auto">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control bg-dark border-secondary text-white" placeholder="Enter Address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <button class="fs-5 btn btn-success" type="button" id="button-addon2">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- End Links -->
+    <!-- End Cart Page -->
+    <script src="js/cart.js"></script>
+</body>
+</html>

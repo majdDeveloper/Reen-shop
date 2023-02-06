@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <!-- Link Icon Title -->
+    <link rel="icon" type="video/x-icon" href="./img/logo.png">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- Link Main CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Link Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- Link Font- awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Start Product Page  -->
+  <nav class="navbar navbar-expend-lg bg-dark navbar-light d-none d-lg-block templatemo_nav_top">
+    <div class="container text-light">
+      <div class="w-100 d-flex justify-content-between">
+        <div class="info">
+          <i class="fa-solid fa-envelope text-light"></i>
+          <a href="mailto:info@Shop.com.com" class="text-light text-decoration-none me-3">info@Shop.com</a>
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+75822145422" class="text-light text-decoration-none">+75822145422</a>
+        </div>
+        <div class="account">
+          <ul class="list-unstyled m-0">
+            <li class="d-inline me-3"><a class="text-light" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+            <li class="d-inline me-3"><a class="text-light" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="d-inline me-3"><a class="text-light" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class="d-inline me-3"><a class="text-light" href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Start Header -->
+  <nav class=" navbar-expand-lg navbar-light shadow pt-2 pb-2">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+          <div class=" navbar d-flex jsutify-content-between align-items-center">
+            <a class=" logo align-self-center" href="index.html">
+                <img  src="./img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-around" id="templatemo_main_nav">
+          <div class="flex-fill">
+            <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+              <li class="nav-item">
+                  <a class="text-decoration-none nav-item-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="text-decoration-none nav-item-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="text-decoration-none nav-item-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                  <a class="text-decoration-none nav-item-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+      <div class="navbar align-self-center d-flex justify-content-start">
+          <div class="d-lg-none flex-sm-fill col-7 col-sm-auto pr-3 box-search">
+              <div class="input-group">
+                <div class="input-group-text d-none d-lg-flex">
+                  <i class="btn-close" data-bs-dismiss="offcanvas"></i>
+                </div>
+                  <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                  <div class="input-group-text">
+                      <i class="fa fa-fw fa-search" style="cursor: pointer;"></i>
+                  </div>
+              </div>
+          </div>
+          <button class="bg-transparent search p-0 m-0 mx-2 border-0 d-none d-lg-inline" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search">
+            <i class="fa fa-fw fa-search text-dark mr-2 fs-5 d-none d-lg-block"></i>
+          </button>
+          <a href="cart.html" class="bg-transparent p-2 m-0 mx-2 border-0 position-relative notices-cart" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Card">
+            <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1 fs-5"></i>
+            <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-warning text-dark notices">+<span>0</span></span>
+          </a>
+          <button class="bg-transparent p-0 m-0 mx-2 border-0" data-bs-toggle="tooltip" data-bs-placement="bottom" title="User">
+            <i class="fa fa-fw fa-user text-dark fs-5"></i>
+            <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-warning text-dark"></span>
+          </button>                 
+        </div>
+      </div>
+  </div>
+</nav>
+  <!-- Close Header -->
+  <!-- Start product details -->
+  <section class="product_details">
+        <div class="container py-5">
+            <div class="details row">
+                <div class="images col-lg-6 pb-3">
+                    <div class="card mb-3">
+                        <img class="card-img-fluid rounded main-img" alt="Main Image Product" id="product-detail">
+                    </div>
+                    <div class="row">
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="prev">
+                                <i class="text-dark fas fa-chevron-left"></i>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </div>
+                        <div id="multi-item-example" class="col-10 carousel slide carousel-multi-item" data-bs-ride="carousel">
+                            <!--Start Slides-->
+                            <div class="carousel-inner product-links-wap" role="listbox">
+                                <!--First slide-->
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img class="card-img img-fluid rounded child-img" alt="Product Image 1">
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="card-img img-fluid rounded child-img" alt="Product Image 2">
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="card-img img-fluid rounded child-img" alt="Product Image 3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--First slide-->
+                                <!--Second slide-->
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img class="card-img img-fluid rounded child-img" alt="Product Image 4">
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="card-img img-fluid rounded child-img" alt="Product Image 5">
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="card-img img-fluid rounded child-img" alt="Product Image 6">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Second slide-->
+                            </div>
+                            <!--End Slides-->
+                        </div>
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="next">
+                                <i class="text-dark fas fa-chevron-right"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6 details_text bg-light ps-4 pb-3">
+                        <p class="h1">Active Wear</p>
+                        <span class="fs-2 text-success price-product"></span>
+                        <span class="fs-3 text-secondary">instead</span>
+                        <span class="fs-2 text-secondary price-original text-decoration-line-through"></span>    
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fa-solid fa-star fs-5 text-warning"></i>      
+                            <i class="fa-solid fa-star fs-5 text-warning"></i>      
+                            <i class="fa-solid fa-star fs-5 text-warning"></i>      
+                            <i class="fa-solid fa-star text-muted fs-5"></i>      
+                            <i class="fa-solid fa-star text-muted"></i>
+                            <span>Rating 4.8 | 36 Comments</span>
+                        </li>
+                    </ul>
+                    <p class="fs-4">Brand: <span>Easy Wear</span></p>
+                    <p class="fs-5">Description:-</p>
+                    <p class="pb-4 text-muted fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse. Donec condimentum elementum convallis. Nunc sed orci a diam ultrices aliquet interdum quis nulla.</p>
+                    <p class="fs-5">Avaliable Color :<span class="fw-bold">White / Black</span></p>
+                    <p class="fs-5">Specification:</p>
+                    <ul class="list-unstyled fw-light">
+                        <li>Lorem ipsum dolor sit</li>
+                        <li>Amet, consectetur</li>
+                        <li>Adipiscing elit,set</li>
+                        <li>Duis aute irure</li>
+                        <li>Ut enim ad minim</li>
+                        <li>Dolore magna aliqua</li>
+                        <li>Excepteur sint</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Product Section -->
+    <!-- Start Slides Section -->
+    <section class="Related_Products">
+        <div class="container swiper py-5 mySwiper">
+            <p class="h1 mb-5">Related Products</p>
+            <div class="swiper-wrapper">
+            </div>
+            <div class="swiper-button swiper-button-next d-none d-md-block"></div>
+            <div class="swiper-button swiper-button-prev d-none d-md-block"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- End Slides Section  -->
+    <!-- Start Brands Section -->
+    <section class="brands bg-light">
+        <div class="container py-5">
+            <div class="title-section col-lg-6 m-auto pt-5 text-center">
+                <p class="fw-light fs-1">Our Brands</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide col-lg-9 m-auto" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-3 p-md-5">
+                            <a href="#">
+                                <img src="./img/brand_01.png" class="img-fluid brand-img" alt="...">
+                            </a>
+                        </div>
+                        <div class="col-3 p-md-5">
+                            <a href="#">
+                                <img src="./img/brand_02.png" class="img-fluid brand-img" alt="...">
+                            </a>
+                        </div>
+                        <div class="col-3 p-md-5">
+                            <a href="#">
+                                <img src="./img/brand_03.png" class="img-fluid brand-img" alt="...">
+                            </a>
+                        </div>
+                        <div class="col-3 p-md-5">
+                            <a href="#">
+                                <img src="./img/brand_04.png" class="img-fluid brand-img" alt="...">
+                            </a>
+                        </div>
+                    </div>                  
+                </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-3 p-md-5">
+                            <a href="#">
+                                <img src="./img/brand_01.png" class="img-fluid brand-img" alt="...">
+                            </a>
+                        </div>
+                        <div class="col-3 p-md-5">
+                            <a href="#">
+                                <img src="./img/brand_02.png" class="img-fluid brand-img" alt="...">
+                            </a>
+                        </div>
+                        <div class="col-3 p-md-5">
+                            <a href="#">
+                                <img src="./img/brand_03.png" class="img-fluid brand-img" alt="...">
+                            </a>
+                        </div>
+                        <div class="col-3 p-md-5">
+                            <a href="#">
+                                <img src="./img/brand_04.png" class="img-fluid brand-img" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="move-slide-brands-pre" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="text-muted fs-1" aria-hidden="true"><i class="fa-solid fa-angle-left"></i></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="move-slide-brands-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="text-muted fs-1" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- End Brands Section -->      
+    <!-- Start Links -->
+    <section class="links bg-dark">
+        <div class="container py-5">
+          <div class="row border-bottom border-secondary">
+            <div class="col-md-4 pb-5">
+              <h1 class="text-success border-bottom border-secondary pb-3 mb-4">Reen Shops</h1>
+              <div>
+                <ul class="list-unstyled text-light fw-light footer-link-list">
+                  <li class="fs-5 mt-3">
+                    <a href="#" class="text-decoration-none text-light">
+                      <i class="fa-solid fa-location-dot"></i>
+                      123 Consectetur at ligula 10660
+                    </a>
+                  </li>
+                  <li class="fs-5 mt-3">
+                    <a href="tel:+75822145422" class="text-decoration-none text-light">
+                      <i class="fa-sharp fa-solid fa-phone"></i>
+                      +75822145422
+                    </a>
+                  </li>
+                  <li class="fs-5 mt-3">
+                    <a href="#" class="text-decoration-none text-light">
+                      <i class="fa-solid fa-envelope"></i>
+                      info@Shop.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="products col-md-4 pb-5 fw-light">
+              <h1 class="text-muted border-bottom border-secondary pb-3 mb-4">Products</h1>
+              <div>
+                <ul class="list-unstyled footer-link-list">
+                  <li class="fs-5 mt-3">
+                    <a href="shop.html" class="link">Luxury</a>
+                  </li>
+                  <li class="fs-5 mt-3">
+                    <a href="shop.html" class="link">Sport Wear</a>
+                  </li>
+                  <li class="fs-5 mt-3">
+                    <a href="shop.html" class="link">Men's Shoes</a>
+                  </li>
+                  <li class="fs-5 mt-3">
+                    <a href="shop.html" class="link">Women's Shoes</a>
+                  </li>
+                  <li class="fs-5 mt-3">
+                    <a href="shop.html" class="link">Popular Dress</a>
+                  </li>
+                  <li class="fs-5 mt-3">
+                    <a href="shop.html" class="link">Gym Accessories</a>
+                  </li>
+                  <li class="fs-5 mt-3">
+                    <a href="shop.html" class="link">Sport Shoes</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="products col-md-4 pb-5 fw-light">
+              <h1 class="text-muted border-bottom border-secondary pb-3 mb-4">Further Info</h1>
+              <div>
+                <ul class="list-unstyled text-light footer-link-list">
+                  <li class="fs-5 mt-3">
+                    <a href="index.html" class="link">Home</a>
+                  </li>
+                  <li class="fs-5 mt-3">
+                    <a href="about.html" class="link">About Us</a>
+                  </li>
+                  <li class="fs-5 mt-3">
+                    <a href="cart.html" class="link">My Cart</a>
+                  </li>
+                  <li class="fs-5 mt-3">
+                    <a href="shop.html" class="link">Shop</a>
+                  </li>
+                  <li class="fs-5 mt-3">
+                    <a href="contact.html" class="link">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5 md-text-center">
+            <div class="col-auto me-auto">
+              <ul class="list-inline text-left footer-icons">
+                <li class="list-inline-item text-center mb-4">
+                  <a href="#" class="link-circle fs-5 px-3 py-2 rounded-circle">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center mb-4">
+                  <a href="#" class="link-circle fs-5 px-3 py-2 rounded-circle">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center mb-4">
+                  <a href="#" class="link-circle fs-5 px-3 py-2 rounded-circle">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center mb-4">
+                  <a href="#" class="link-circle fs-5 px-3 py-2 rounded-circle">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-auto">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control bg-dark border-secondary text-white" placeholder="Enter Address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="fs-5 btn btn-success" type="button" id="button-addon2">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- End Links -->
+    <!-- End Product Page  -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/product.js"></script>
+</body>
+</html>
