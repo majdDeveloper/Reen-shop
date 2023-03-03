@@ -22,7 +22,7 @@ subsImageProduct.forEach((sub, indexSub) => {
     })
 })
 // add price 
-productPrice.textContent = `${productPriceForLocalStorage}.99$`;
+productPrice.textContent = `${productPriceForLocalStorage}`;
 productPriceOriginal.textContent = `${parseInt(productPriceForLocalStorage)+70}.99$`;
 
 // products show
