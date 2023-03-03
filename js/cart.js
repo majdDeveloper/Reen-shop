@@ -49,7 +49,11 @@ let btnClearCart = document.querySelector(".clear-cart");
 // check in product in cart from localStorage 
 if(window.localStorage.getItem("cartItems")) {
   arrayOfProductCart = JSON.parse(window.localStorage.getItem("cartItems"));
+} else {
+  cartBody.innerHTML = '<p class="text-center fs-5 my-5">No Hove A Products In You Cart</p>';
 }
+
+
 
 getFromLocalStorage();
 
@@ -57,6 +61,7 @@ getFromLocalStorage();
 btnClearCart.addEventListener("click", () => {
   window.localStorage.removeItem("cartItems");
   cartBody.innerHTML = "";
+  cartBody.innerHTML = '<p class="text-center fs-5 my-5">No Hove A Products In You Cart</p>';
 })
 
 // add product from cart 
